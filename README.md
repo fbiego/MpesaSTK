@@ -3,7 +3,7 @@ An Arduino Library implementing MPESA Daraja on microcontrollers
 
 ## Usage
 
-### Initialize the object
+### Initialize
 
 ```
 //MpesaSTK mpesa(consumer_key, consumer_secret, pass_key);	//defaults to SANDBOX environment
