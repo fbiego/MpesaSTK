@@ -1,6 +1,8 @@
 # MpesaSTK
 An Arduino Library implementing MPESA Daraja on microcontrollers
 
+[![arduino-library-badge](https://www.ardu-badge.com/badge/MpesaSTK.svg?)](https://www.arduinolibraries.info/libraries/mpesa-stk)
+
 ## Usage
 
 ### Initialize
