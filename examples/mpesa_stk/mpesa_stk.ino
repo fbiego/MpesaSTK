@@ -26,7 +26,6 @@
 #include <WiFi.h>
 #include <WiFiMulti.h>
 #include <MpesaSTK.h>
-//#include <Arduino_JSON.h>
 
 //get your credentials from;
 //https://developer.safaricom.co.ke/user/me/apps
@@ -57,32 +56,13 @@ void setup() {
   
   mpesa.begin(TEST_CODE, PAYBILL, "http://mycallbackurl.com/checkout.php");   //call this in setup after connected to the internet
 
-
-
   String result = mpesa.pay("2547XXXX__", 20, "Arduino", "Test");	//STK request
   //you can also implement this in the loop but remember each call performs an STK Request
-  //Serial.println(result);
-  //parseJson(result);
+  Serial.println(result);
+
 
 }
 
 void loop() {
   //nothing here
 }
-
-/*
-void parseJson(String json) {
-  JSONVar myObject = JSON.parse(json);
-  if (JSON.typeof(myObject) == "undefined") {
-    Serial.println("Parsing input failed!");
-  } else {
-    JSONVar keys = myObject.keys();
-    for (int i = 0; i < keys.length(); i++) {
-      JSONVar value = myObject[keys[i]];
-      Serial.print(keys[i]);
-      Serial.print(" = ");
-      Serial.println(value);
-    }
-  }
-}
-*/

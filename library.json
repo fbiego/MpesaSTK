@@ -1,6 +1,6 @@
 {
   "name": "MpesaSTK",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": "Arduino, ESP32, MPESA, STK, Payments, Daraja",
   "description": "A library implementing MPESA Daraja on Arduino microcontrollers",
   "repository":
