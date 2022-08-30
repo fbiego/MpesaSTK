@@ -15,7 +15,7 @@ MpesaSTK mpesa(consumer_key, consumer_secret, pass_key, SANDBOX);	//environment 
 ### Details
 ```
 //TEST_CODE = 174379 
-mpesa.begin(TEST_CODE, PAYBILL, "http://mycallbackurl.com/checkout.php"); //business code, type(PAYBILL or BUY_GOODS), callback url
+mpesa.begin(TEST_CODE, PAYBILL, "https://mycallbackurl.com/checkout.php"); //business code, type(PAYBILL or BUY_GOODS), callback url
 ```
 
 ### StkPush
