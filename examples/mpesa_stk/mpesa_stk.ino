@@ -54,7 +54,7 @@ void setup() {
   }
   Serial.println(" connected");
   
-  mpesa.begin(TEST_CODE, PAYBILL, "http://mycallbackurl.com/checkout.php");   //call this in setup after connected to the internet
+  mpesa.begin(TEST_CODE, PAYBILL, "https://mycallbackurl.com/checkout.php");   //call this in setup after connected to the internet
 
   String result = mpesa.pay("2547XXXX__", 20, "Arduino", "Test");	//STK request
   //you can also implement this in the loop but remember each call performs an STK Request
